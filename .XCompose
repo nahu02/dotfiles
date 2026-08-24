@@ -1,0 +1,6 @@
+include "%L"
+<dead_abovering> <o> : "ø" U00F8
+<dead_abovering> <O> : "Ø" U00D8
+<dead_abovering> <e> : "æ" U00E6
+<dead_abovering> <E> : "Æ" U00C6
+
