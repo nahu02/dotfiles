@@ -16,6 +16,9 @@ shopt -s checkwinsize    # re-check LINES/COLUMNS after every command, so bash
 # Teach `less` to page non-text files (archives, PDFs, images)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
+# If available, run fastfetch (not in VS Code)
+command -v fastfetch > /dev/null && [[ "$TERM_PROGRAM" != "vscode" ]] && fastfetch
+
 # --- Prompt ------------------------------------------------------------------
 # Decide whether the terminal can do color
 color_prompt=

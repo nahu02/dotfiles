@@ -79,5 +79,8 @@ activate_venv_on_cd
 # VS Code shell integration
 [[ "$TERM_PROGRAM" == "vscode" ]] && command -v code > /dev/null && . "$(code --locate-shell-integration-path zsh)"
 
+# If available, run fastfetch (not in VS Code)
+command -v fastfetch > /dev/null && [[ "$TERM_PROGRAM" != "vscode" ]] && fastfetch
+
 # zoxide init
 command -v zoxide > /dev/null && eval "$(zoxide init zsh --cmd cd)"

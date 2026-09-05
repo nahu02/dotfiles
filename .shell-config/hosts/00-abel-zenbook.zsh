@@ -1,8 +1,6 @@
 # This file must match `hostname -s` on the machine it belongs to
 # Only device-specific go here
 
-command -v fastfetch > /dev/null && [[ "$TERM_PROGRAM" != "vscode" ]] && fastfetch
-
 # Drift terminal screensaver
 command -v drift > /dev/null && [[ "$TERM_PROGRAM" != "vscode" ]] && eval "$(drift shell-init zsh)"
 
