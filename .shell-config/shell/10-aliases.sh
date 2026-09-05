@@ -1,6 +1,8 @@
 # Portable aliases. Sourced by BOTH bash and zsh. Every tool-based alias is
 # guarded with command -v so it's harmless on machines missing the tool
 
+command -v exa > /dev/null && alias ls='exa --group-directories-first' && alias tree='exa --tree'
+command -v eza > /dev/null && alias ls='eza --group-directories-first' && alias tree='eza --tree'
 command -v lsd > /dev/null && alias ls='lsd --group-dirs first' && alias tree='lsd --tree'
 
 command -v batcat > /dev/null && alias bat='batcat'  # Ubuntu's bat package is called batcat
