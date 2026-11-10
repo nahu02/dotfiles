@@ -28,9 +28,9 @@ if command -v flatpak > /dev/null; then
 	flatpak info com.usebottles.bottles > /dev/null 2>&1 && alias bottles-cli="flatpak run --command=bottles-cli com.usebottles.bottles"
 fi
 
-alias l='ls -la'
-alias ll='ls -l'
-alias la='ls -lA'
+alias l='ls -lha'
+alias ll='ls -lh'
+alias la='ls -lhA'
 
 # Bare-repo dotfiles manager (this file lives inside that repo's work-tree)
 alias config='/usr/bin/git --git-dir=$HOME/.shared-conf/ --work-tree=$HOME'
